@@ -21,6 +21,10 @@ h1, h2, h3 {
     justify-content: center;
 }
 
+.center {
+  text-align: center;
+}
+
 /* Nav */
 .nav {
   position: sticky;
