@@ -33,6 +33,7 @@ h1, h2, h3 {
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
+  background: #F5F2EB;
 }
 
 .nav a {
