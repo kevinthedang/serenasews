@@ -2,7 +2,7 @@
 import Header from "../components/Header.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
-import "../styles/index.scss";
+import "../styles/index.css";
 
 const { title = "Business Name" } = Astro.props;
 ---
@@ -11,18 +11,34 @@ const { title = "Business Name" } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
-    <link rel="stylesheet" href="/styles/global.css" />
+    <script>
+      const topButton = document.querySelector(".top-button");
+
+      const toggleTopButton = () => {
+        if (!topButton) return;
+
+        if (window.scrollY > 120) {
+          topButton.classList.add("visible");
+        } else {
+          topButton.classList.remove("visible");
+        }
+      };
+
+      window.addEventListener("scroll", toggleTopButton);
+      toggleTopButton();
+    </script>
   </head>
 
   <body>
+    <div id="top"></div>
     <Header />
+    <Nav />
 
     <main>
       <slot />
     </main>
-    <Nav />
 
-
+    <a href="#top" class="top-button">↑</a>
     <Footer />
   </body>
 </html>
