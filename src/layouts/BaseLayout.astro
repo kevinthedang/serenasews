@@ -40,9 +40,9 @@ const { title = "Business Name" } = Astro.props;
         const button = form.querySelector("button[type='submit']");
         const originalText = button?.textContent || "Submit";
 
-        const public_key = import.meta.env.PUBLIC_KEY;
-        const service_id = import.meta.env.SERVICE_ID;
-        const templateId = import.meta.env.TEMPLATE_ID;
+        const public_key = import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY;
+        const service_id = import.meta.env.PUBLIC_EMAILJS_SERVICE_ID;
+        const templateId = import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID;
 
         if (!window.emailjs) {
           console.error("EmailJS did not load.");
