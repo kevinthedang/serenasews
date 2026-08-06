@@ -3,11 +3,16 @@
 /* General */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 section {
   min-height: auto;
   padding: 2rem 1.5rem;
+}
+
+section[id] {
+  scroll-margin-top: 0.5rem;
 }
 
 html, body {
