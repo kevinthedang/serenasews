@@ -2,27 +2,36 @@
 import Header from "../components/Header.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
-import "../styles/index.scss";
+import "../styles/index.css";
 
 const { title = "Business Name" } = Astro.props;
+const publicKey = import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY ?? "";
+const serviceId = import.meta.env.PUBLIC_EMAILJS_SERVICE_ID ?? "";
+const templateId = import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID ?? "";
+const emailjsJson = JSON.stringify({ publicKey, serviceId, templateId });
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
-    <link rel="stylesheet" href="/styles/global.css" />
+
+    <script set:html={`window.EMAILJS = ${emailjsJson};`}></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="module" src="/scripts/contact-form.js"></script>
   </head>
 
   <body>
+    <div id="top"></div>
     <Header />
+    <Nav />
 
     <main>
       <slot />
     </main>
-    <Nav />
 
-
+    <a href="#top" class="top-button">↑</a>
     <Footer />
   </body>
 </html>
