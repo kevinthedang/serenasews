@@ -7,7 +7,7 @@ html {
 
 section {
   min-height: auto;
-  padding: 4rem 2rem;
+  padding: 2rem 1.5rem;
 }
 
 html, body {
@@ -61,8 +61,45 @@ h1, h2, h3 {
 }
 
 /* About Me */
+#about {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+#about h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+#about p {
+  max-width: 54rem;
+  margin: 0 auto 1.25rem;
+  line-height: 1.75;
+  color: #4b4b4b;
+}
+
+#about p:first-of-type {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #262626;
+}
 
 /* Services */
+#services {
+  max-width: 900px;
+  margin: 2.5rem auto 0;
+  padding: 2rem 2rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
 .service-group {
   margin: 2rem 0;
 }
