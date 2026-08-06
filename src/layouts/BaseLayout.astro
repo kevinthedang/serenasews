@@ -5,10 +5,6 @@ import Footer from "../components/Footer.astro";
 import "../styles/index.css";
 
 const { title = "Business Name" } = Astro.props;
-
-const publicKey = import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY;
-const serviceId = import.meta.env.PUBLIC_EMAILJS_SERVICE_ID;
-const templateId = import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID;
 ---
 
 <html lang="en">
@@ -17,7 +13,7 @@ const templateId = import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID;
     <title>{title}</title>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="/src/scripts/contact-form.js" type="module"></script>
+    <script type="module" src={new URL('../scripts/contact-form.js', import.meta.url).href}></script>
   </head>
 
   <body>
