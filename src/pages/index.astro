@@ -127,6 +127,36 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   <section id="contact">
     <h2>Contact</h2>
+
+    <form id="contact-form" class="contact-form">
+      <label for="firstName">
+        First name
+        <input type="text" name="firstName" id="firstName" required>
+      </label>
+
+      <label for="lastName">
+        Last name
+        <input type="text" name="lastName" id="lastName" required>
+      </label>
+
+      <label for="email">
+        Email
+        <input type="email" name="email" id="email" required>
+      </label>
+
+      <label for="phoneNumber">
+        Phone number
+        <input type="tel" name="phoneNumber" id="phoneNumber" required>
+      </label>
+
+      <label for="message">
+        Message
+        <textarea name="message" id="message" rows="5" required></textarea>
+      </label>
+
+      <button type="submit">Submit</button>
+      <p id="form-status" class="form-status" aria-live="polite"></p>
+    </form>
   </section>
 	
 </BaseLayout>

@@ -86,6 +86,55 @@ h1, h2, h3 {
   }
 }
 
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #9a8f7a;
+  border-radius: 0.5rem;
+  font: inherit;
+}
+
+.contact-form button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.form-status {
+  min-height: 1.25rem;
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-status.success {
+  color: #2f6b3f;
+}
+
+.form-status.error {
+  color: #a33a3a;
+}
+
+.form-status.sending {
+  color: #6b5f3f;
+}
+
 /* Back to Top Button */
 .top-button {
   position: fixed;
