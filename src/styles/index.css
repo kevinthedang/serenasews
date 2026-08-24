@@ -33,9 +33,13 @@ main {
   flex: 1;
 }
 
+header {
+  text-align: center;
+}
+
 h1, h2, h3 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .center {

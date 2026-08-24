@@ -8,10 +8,39 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <div class="about-content">
       <div class="about-text">
         <p>Hi, I'm Serena, the owner of Serena Dang Tailoring & Alterations.</p>
-        <p>Sewing has been a passion of mine for years and I'm grateful to have turned it into a career helping people feel confident in the things they wear and love. With over five years of professional experience in garment construction and alterations, I specialize in tailoring men's and women's clothing. From Everyday wardrobe pieces to suits, formal wear, bridal gowns, and heirloom garments. I also provide alterations for home textiles, including curtain and drapery hemming, helping clients achieve a polished, custom look throughout their homes.</p>
-        <p>For the past three years, I've worked alongside some of the industry's most skilled tailors at Nordstrom, where I've refined my craftmanship while learning to deliver expectional quality with precision and efficiency.</p>
-        <p>One of my proudest accomplishments is designing and creading my own wedding gown and veil entirely from scratch. From sketching the design to teaching myself pattern-making, selecting fabrics, hand-heading, and engineering to gown's structure, the project challenged me to master advanced couture techniques. The finished gown weighed nearly twenty pounds and was custom-fitted to perfection, making it one of the most rewarding projects I've ever completed.</p>
-        <p>Whether you're preparing for a wedding, tailing a favorite suit, hemming curtains for your home, or simply want your everyday clothing to fit beautifully, I treat every project with the same care and attention to detail as if it were my own. My goal is simple: to provide expert craftmanship and personalized service that leaves you feeling confident in the finished result.</p>
+        <p>
+          Sewing has been a passion of mine for years and I'm grateful to have
+          turned it into a career helping people feel confident in the things
+          they wear and love. With over five years of professional experience in
+          garment construction and alterations, I specialize in tailoring men's
+          and women's clothing. From Everyday wardrobe pieces to suits, formal
+          wear, bridal gowns, and heirloom garments. I also provide alterations
+          for home textiles, including curtain and drapery hemming, helping
+          clients achieve a polished, custom look throughout their homes.
+        </p>
+        <p>
+          For the past three years, I've worked alongside some of the industry's
+          most skilled tailors at Nordstrom, where I've refined my craftmanship
+          while learning to deliver expectional quality with precision and
+          efficiency.
+        </p>
+        <p>
+          One of my proudest accomplishments is designing and creading my own
+          wedding gown and veil entirely from scratch. From sketching the design
+          to teaching myself pattern-making, selecting fabrics, hand-heading,
+          and engineering to gown's structure, the project challenged me to
+          master advanced couture techniques. The finished gown weighed nearly
+          twenty pounds and was custom-fitted to perfection, making it one of
+          the most rewarding projects I've ever completed.
+        </p>
+        <p>
+          Whether you're preparing for a wedding, tailing a favorite suit,
+          hemming curtains for your home, or simply want your everyday clothing
+          to fit beautifully, I treat every project with the same care and
+          attention to detail as if it were my own. My goal is simple: to
+          provide expert craftmanship and personalized service that leaves you
+          feeling confident in the finished result.
+        </p>
         <p>I look forward to working with you!</p>
       </div>
       <div class="about-image">
@@ -77,7 +106,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <li><span>Pant Leg Taper</span><span>$20</span></li>
         <li><span>Jacket Length</span><span>$40</span></li>
         <li><span>Replace Zipper</span><span>$30</span></li>
-        <li><span>Lining Repair / Replacement</span><span>Starting at $60</span></li>
+        <li>
+          <span>Lining Repair / Replacement</span><span>Starting at $60</span>
+        </li>
       </ul>
     </div>
 
@@ -120,40 +151,53 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     <div class="service-group">
       <h3>By Appointment Only</h3>
-      <p class="center">To ensure personalized service and the perfect fit, all appointments are scheduled in advance.</p>
+      <p class="center">
+        To ensure personalized service and the perfect fit, all appointments are
+        scheduled in advance.
+      </p>
     </div>
 
     <div class="service-group">
       <div class="center">
         <h5>Please Note</h5>
-          <p>Prices may vary depending on garment construction, lining, fabric type, embellishments, or alteration complexity.</p>
-          <p>Bridal gowns, formal wear, leather, and custom work are individually quoted after your fitting.</p>
+        <p>
+          Prices may vary depending on garment construction, lining, fabric
+          type, embellishments, or alteration complexity.
+        </p>
+        <p>
+          Bridal gowns, formal wear, leather, and custom work are individually
+          quoted after your fitting.
+        </p>
       </div>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
+    <p class="contact-notice center">
+      Please note: We currently serve clients locally in Oceanside, CA. We do
+      not accept out-of-state or mail-in alteration inquiries.
+    </p>
 
     <form id="contact-form" class="contact-form">
       <label for="firstName">
         First name
-        <input type="text" name="firstName" id="firstName" required>
+        <input type="text" name="firstName" id="firstName" required />
       </label>
 
       <label for="lastName">
         Last name
-        <input type="text" name="lastName" id="lastName" required>
+        <input type="text" name="lastName" id="lastName" required />
       </label>
 
       <label for="email">
         Email
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="email" id="email" required />
       </label>
 
       <label for="phoneNumber">
         Phone number
-        <input type="tel" name="phoneNumber" id="phoneNumber" required>
+        <input type="tel" name="phoneNumber" id="phoneNumber" required />
       </label>
 
       <label for="message">
@@ -165,5 +209,4 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <p id="form-status" class="form-status" aria-live="polite"></p>
     </form>
   </section>
-	
 </BaseLayout>
