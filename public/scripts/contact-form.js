@@ -59,11 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 form.reset();
                 window.history.replaceState(null, "", window.location.pathname);
                 if (status) {
-                    status.textContent = "Thanks! Your message was sent.";
+                    status.textContent = "Message sent. Thanks for reaching out!";
                     status.className = "form-status success";
                 }
                 if (button) {
-                    button.textContent = "Sent!";
+                    button.textContent = "Send another message";
                     button.disabled = false;
                 }
             })

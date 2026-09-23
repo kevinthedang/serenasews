@@ -380,21 +380,32 @@ h1, h2, h3 {
 }
 
 .form-status {
-  min-height: 1.25rem;
+  display: none;
   margin: 0;
-  font-weight: 600;
+  padding: 1rem 1.15rem;
+  border-left: 3px solid transparent;
   font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .form-status.success {
+  display: block;
+  border-left-color: #56805d;
+  background: #edf4ed;
   color: #2f6b3f;
 }
 
 .form-status.error {
+  display: block;
+  border-left-color: #a33a3a;
+  background: #f8eeee;
   color: #a33a3a;
 }
 
 .form-status.sending {
+  display: block;
+  border-left-color: #9b8152;
+  background: #f7f1e7;
   color: #6b5f3f;
 }
 
