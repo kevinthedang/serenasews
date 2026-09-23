@@ -4,52 +4,55 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout title="Serena Dang | Tailoring & Alterations">
   <section id="about">
+    <p class="section-kicker">The person behind the needle</p>
     <h2>About Me</h2>
     <div class="about-content">
       <div class="about-text">
-        <p>Hi, I'm Serena, the owner of Serena Dang Tailoring & Alterations.</p>
+        <p class="about-lede">Hi, I'm Serena, the owner of Serena Dang Tailoring & Alterations.</p>
         <p>
-          Sewing has been a passion of mine for years and I'm grateful to have
-          turned it into a career helping people feel confident in the things
-          they wear and love. With over five years of professional experience in
-          garment construction and alterations, I specialize in tailoring men's
-          and women's clothing. From Everyday wardrobe pieces to suits, formal
-          wear, bridal gowns, and heirloom garments. I also provide alterations
-          for home textiles, including curtain and drapery hemming, helping
-          clients achieve a polished, custom look throughout their homes.
+          Sewing has been a passion of mine for years, and I love helping people
+          feel confident in the clothes they wear. With more than five years of
+          professional experience in garment construction and alterations, I
+          work on everything from everyday wardrobe pieces and suits to formal
+          wear, bridal gowns, heirloom garments, and home textiles.
         </p>
         <p>
-          For the past three years, I've worked alongside some of the industry's
-          most skilled tailors at Nordstrom, where I've refined my craftmanship
-          while learning to deliver expectional quality with precision and
-          efficiency.
+          For the past three years, I've worked alongside skilled tailors at
+          Nordstrom, refining my craftsmanship and learning to deliver precise,
+          efficient work across a wide range of garments.
         </p>
         <p>
-          One of my proudest accomplishments is designing and creading my own
-          wedding gown and veil entirely from scratch. From sketching the design
-          to teaching myself pattern-making, selecting fabrics, hand-heading,
-          and engineering to gown's structure, the project challenged me to
-          master advanced couture techniques. The finished gown weighed nearly
-          twenty pounds and was custom-fitted to perfection, making it one of
-          the most rewarding projects I've ever completed.
+          One of my proudest projects was designing and creating my own wedding
+          gown and veil from scratch. From sketching and pattern-making to
+          selecting fabrics and engineering the gown's structure, the project
+          challenged me to develop advanced couture techniques. I bring that
+          same thoughtful attention to every fitting, whether I'm tailoring a
+          favorite suit, preparing a gown, or hemming curtains for your home.
         </p>
-        <p>
-          Whether you're preparing for a wedding, tailing a favorite suit,
-          hemming curtains for your home, or simply want your everyday clothing
-          to fit beautifully, I treat every project with the same care and
-          attention to detail as if it were my own. My goal is simple: to
-          provide expert craftmanship and personalized service that leaves you
-          feeling confident in the finished result.
-        </p>
-        <p>I look forward to working with you!</p>
+        <div class="about-details" aria-label="About Serena">
+          <div>
+            <strong>5+</strong>
+            <span>Years of experience</span>
+          </div>
+          <div>
+            <strong>Oceanside, CA</strong>
+            <span>Serving the local community</span>
+          </div>
+          <div>
+            <strong>Crafted with care</strong>
+            <span>Thoughtful, precise work</span>
+          </div>
+        </div>
       </div>
       <div class="about-image">
-        <img src="/serena.png" alt="Serena and her wife" />
+        <img src="/serena.png" alt="Serena in her wedding gown" />
+        <p class="about-caption">Serena wearing the wedding gown she designed and created from scratch.</p>
       </div>
     </div>
   </section>
 
   <section id="services">
+    <p class="section-kicker">Thoughtful work, clearly priced</p>
     <h2>Services &amp; Pricing</h2>
 
     <div class="service-group">
@@ -132,7 +135,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </ul>
     </div>
 
-    <div class="service-group">
+    <div class="service-group appointment-note">
       <h3>By Appointment Only</h3>
       <p class="center">
         To ensure personalized service and the perfect fit, all appointments are
@@ -140,7 +143,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </p>
     </div>
 
-    <div class="service-group">
+    <div class="service-group pricing-note">
       <div class="center">
         <h5>Please Note</h5>
         <p>
@@ -156,11 +159,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </section>
 
   <section id="contact">
+    <p class="section-kicker">Let's make it fit beautifully</p>
     <h2>Contact</h2>
-    <p class="contact-notice center">
-      Please note: We currently serve clients locally in Oceanside, CA. We do
-      not accept out-of-state or mail-in alteration inquiries.
-    </p>
+    <div class="pricing-note contact-note">
+      <div class="center">
+        <h5>Please Note</h5>
+        <p>
+          We currently serve clients locally around Oceanside, CA. We do not
+          accept out-of-state or mail-in alteration inquiries.
+        </p>
+      </div>
+    </div>
 
     <form id="contact-form" class="contact-form">
       <label for="firstName">
