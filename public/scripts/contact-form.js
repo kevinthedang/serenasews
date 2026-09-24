@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const toggleTopButton = () => {
         if (!topButton) return;
 
-        if (window.scrollY > 120) {
+        const scrollThreshold = Math.max(320, window.innerHeight * 0.75);
+
+        if (window.scrollY > scrollThreshold) {
             topButton.classList.add("visible");
         } else {
             topButton.classList.remove("visible");
