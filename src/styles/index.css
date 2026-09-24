@@ -220,7 +220,7 @@ h1, h2, h3 {
   }
 
   .nav {
-    justify-content: flex-start;
+    justify-content: center;
     gap: 0.25rem;
     padding-inline: 0.75rem;
   }
