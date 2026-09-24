@@ -6,6 +6,10 @@ html {
   scroll-padding-top: 5rem;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 section {
   min-height: auto;
   padding: 2rem 1.5rem;
@@ -35,6 +39,22 @@ main {
 
 header {
   text-align: center;
+  padding: 2.75rem 1.25rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+  color: #302a25;
+  font-size: clamp(2rem, 8vw, 3.25rem);
+  line-height: 1.05;
+}
+
+header h3 {
+  margin: 0.7rem 0 0;
+  color: #8a6a52;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 h1, h2, h3 {
@@ -54,16 +74,23 @@ h1, h2, h3 {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0.65rem 1rem;
+  overflow-x: auto;
   background: #F5F2EB;
   box-shadow: 0 1px 0 rgba(138, 106, 82, 0.2);
+  scrollbar-width: none;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
 }
 
 .nav a {
+  flex: 0 0 auto;
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  padding: 0.5rem 0.9rem;
+  padding: 0.65rem 0.9rem;
   border-radius: 999px;
 }
 
@@ -176,8 +203,32 @@ h1, h2, h3 {
 }
 
 @media (max-width: 700px) {
+  html {
+    scroll-padding-top: 4rem;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+  }
+
+  h2 {
+    font-size: clamp(1.7rem, 8vw, 2.25rem);
+  }
+
+  header {
+    padding: 2.25rem 1rem 1.5rem;
+  }
+
+  .nav {
+    justify-content: flex-start;
+    gap: 0.25rem;
+    padding-inline: 0.75rem;
+  }
+
   #about {
-    padding: 3rem 1.25rem;
+    padding: 2.5rem 1rem;
+    border-inline: 0;
+    box-shadow: none;
   }
 
   .about-content {
@@ -187,16 +238,17 @@ h1, h2, h3 {
 
   .about-image {
     order: -1;
-    max-width: 24rem;
+    width: min(100%, 21rem);
     margin: 0 auto;
   }
 
   .about-details {
-    gap: 0.75rem;
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
   }
 
   .about-details span {
-    font-size: 0.72rem;
+    font-size: 0.78rem;
   }
 }
 
@@ -289,11 +341,25 @@ h1, h2, h3 {
 
 @media (max-width: 700px) {
   #services {
-    padding: 3rem 1.25rem;
+    margin-top: 1rem;
+    padding: 2.5rem 1rem;
+    border-inline: 0;
+    box-shadow: none;
   }
 
   .service-list {
     grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .service-list li {
+    min-height: 2.75rem;
+    gap: 0.75rem;
+    padding: 0.65rem 0;
+  }
+
+  .service-list li span:last-child {
+    white-space: nowrap;
   }
 }
 
@@ -371,11 +437,19 @@ h1, h2, h3 {
 
 @media (max-width: 700px) {
   #contact {
-    padding: 3rem 1.25rem;
+    margin-top: 1rem;
+    padding: 2.5rem 1rem;
+    border-inline: 0;
+    box-shadow: none;
   }
 
   .contact-form {
     grid-template-columns: 1fr;
+  }
+
+  .contact-form button {
+    width: 100%;
+    min-height: 3rem;
   }
 }
 
@@ -455,6 +529,13 @@ footer {
   position: static;
   width: 100%;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1.25rem 1rem calc(1.25rem + env(safe-area-inset-bottom));
+}
+
+footer p {
+  margin: 0;
+  color: #6b625b;
+  font-size: 0.78rem;
+  line-height: 1.5;
 }
 
